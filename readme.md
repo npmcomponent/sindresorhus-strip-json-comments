@@ -13,7 +13,7 @@ This is now possible:
 
 *There's already [json-comments](https://npmjs.org/package/json-comments), but it's only for Node.js and uses a naive regex to strip comments which fails on simple cases like `{"a":"//"}`. This module however parses out the comments.*
 
-[Also availale as a grunt task.](https://github.com/sindresorhus/grunt-strip-json-comments)
+Also available as a [grunt task](https://github.com/sindresorhus/grunt-strip-json-comments) and [require hook](https://github.com/uTest/autostrip-json-comments).
 
 ## Install
 
