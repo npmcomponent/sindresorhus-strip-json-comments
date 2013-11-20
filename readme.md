@@ -62,7 +62,7 @@ component install sindresorhus/strip-json-comments
 
 ```js
 var stripJsonComments = require('strip-json-comments');
-var json = '{//rainbows\n"unicorn":"cake"}';
+var json = '{/*rainbows*/"unicorn":"cake"}';
 JSON.parse(stripJsonComments(json));
 //=> {unicorn: 'cake'}
 ```
@@ -74,7 +74,7 @@ JSON.parse(stripJsonComments(json));
 ```
 
 ```js
-var json = '{//rainbows\n"unicorn":"cake"}';
+var json = '{/*rainbows*/"unicorn":"cake"}';
 JSON.parse(stripJsonComments(json));
 //=> {unicorn: 'cake'}
 ```
