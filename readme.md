@@ -13,7 +13,7 @@ This is now possible:
 
 It will remove single-line comments `//` and mult-line comments `/**/`.
 
-Also available as a [grunt task](https://github.com/sindresorhus/grunt-strip-json-comments) and [require hook](https://github.com/uTest/autostrip-json-comments).
+Also available as a [gulp](https://github.com/sindresorhus/gulp-strip-json-comments)/[grunt](https://github.com/sindresorhus/grunt-strip-json-comments)/[broccoli](https://github.com/sindresorhus/broccoli-strip-json-comments) plugin and a [require hook](https://github.com/uTest/autostrip-json-comments).
 
 
 *There's already [json-comments](https://npmjs.org/package/json-comments), but it's only for Node.js and uses a naive regex to strip comments which fails on simple cases like `{"a":"//"}`. This module however parses out the comments.*
