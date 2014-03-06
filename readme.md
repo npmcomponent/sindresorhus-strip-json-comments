@@ -1,4 +1,4 @@
-# strip-json-comments [![Build Status](https://secure.travis-ci.org/sindresorhus/strip-json-comments.png?branch=master)](http://travis-ci.org/sindresorhus/strip-json-comments)
+# strip-json-comments [![Build Status](https://travis-ci.org/sindresorhus/strip-json-comments.png?branch=master)](https://travis-ci.org/sindresorhus/strip-json-comments)
 
 > Strip comments from JSON. Lets you use comments in your JSON files!
 
@@ -25,57 +25,24 @@ Download [manually](https://github.com/sindresorhus/strip-json-comments/releases
 
 #### [npm](https://npmjs.org/package/strip-json-comments)
 
-```
-npm install --save strip-json-comments
-```
-
-Or globally if you want to use it as a CLI app:
-
-```
-npm install --global strip-json-comments
-```
-
-You can then use it in your Terminal like:
-
-```
-strip-json-comments with-comments.json > without.json
-```
-
-Or pipe something to it:
-
-```
-cat with-comments.json | strip-json-comments > without.json
+```bash
+$ npm install --save strip-json-comments
 ```
 
 #### [Bower](http://bower.io)
 
-```
-bower install --save strip-json-comments
+```bash
+$ bower install --save strip-json-comments
 ```
 
 #### [Component](https://github.com/component/component)
 
-```
-component install sindresorhus/strip-json-comments
-```
-
-
-## Examples
-
-### Node.js
-
-```js
-var stripJsonComments = require('strip-json-comments');
-var json = '{/*rainbows*/"unicorn":"cake"}';
-JSON.parse(stripJsonComments(json));
-//=> {unicorn: 'cake'}
+```bash
+$ component install sindresorhus/strip-json-comments
 ```
 
-### Bower
 
-```html
-<script src="bower_components/strip-json-comments/strip-json-comments.js"></script>
-```
+## Example
 
 ```js
 var json = '{/*rainbows*/"unicorn":"cake"}';
@@ -86,11 +53,34 @@ JSON.parse(stripJsonComments(json));
 
 ## API
 
-### stripJsonComments(*string*)
+### stripJsonComments(input)
 
-Accepts a string with JSON and strips out the comments.
+#### input
+
+Type: `String`
+
+Accepts a string with JSON and returns a string without comments.
+
+
+## CLI
+
+You can also use it as a CLI app by installing it globally:
+
+```bash
+$ npm install --global strip-json-comments
+```
+
+#### Usage
+
+```bash
+$ strip-json-comments --help
+
+strip-json-comments <input-file> > <output-file>
+# or
+cat <input-file> | strip-json-comments > <output-file>
+```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
