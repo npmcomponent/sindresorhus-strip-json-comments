@@ -1,4 +1,4 @@
-# strip-json-comments [![Build Status](https://travis-ci.org/sindresorhus/strip-json-comments.png?branch=master)](https://travis-ci.org/sindresorhus/strip-json-comments)
+# strip-json-comments [![Build Status](https://travis-ci.org/sindresorhus/strip-json-comments.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-json-comments)
 
 > Strip comments from JSON. Lets you use comments in your JSON files!
 
@@ -23,26 +23,20 @@ Also available as a [gulp](https://github.com/sindresorhus/gulp-strip-json-comme
 
 Download [manually](https://github.com/sindresorhus/strip-json-comments/releases) or with a package-manager.
 
-#### [npm](https://npmjs.org/package/strip-json-comments)
-
 ```bash
 $ npm install --save strip-json-comments
 ```
 
-#### [Bower](http://bower.io)
-
 ```bash
 $ bower install --save strip-json-comments
 ```
-
-#### [Component](https://github.com/component/component)
 
 ```bash
 $ component install sindresorhus/strip-json-comments
 ```
 
 
-## Example
+## Usage
 
 ```js
 var json = '{/*rainbows*/"unicorn":"cake"}';
