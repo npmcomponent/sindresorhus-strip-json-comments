@@ -1,3 +1,4 @@
+*This repository is a mirror of the [component](http://component.io) module [sindresorhus/strip-json-comments](http://github.com/sindresorhus/strip-json-comments). It has been modified to work with NPM+Browserify. You can install it using the command `npm install npmcomponent/sindresorhus-strip-json-comments`. Please do not open issues or send pull requests against this repo. If you have issues with this repo, report it to [npmcomponent](https://github.com/airportyh/npmcomponent).*
 # strip-json-comments [![Build Status](https://travis-ci.org/sindresorhus/strip-json-comments.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-json-comments)
 
 > Strip comments from JSON. Lets you use comments in your JSON files!
